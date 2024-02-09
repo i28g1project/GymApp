@@ -1,4 +1,4 @@
-package com.example.strongerthanever;
+package com.example.gymapp;
 
 import org.junit.Test;
 

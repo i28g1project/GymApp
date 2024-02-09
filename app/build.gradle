@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.strongerthanever'
+    namespace 'com.example.gymapp'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.strongerthanever"
+        applicationId "com.example.gymapp"
         minSdk 24
         targetSdk 33
         versionCode 1
