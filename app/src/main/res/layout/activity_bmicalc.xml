@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BMICalc"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Obliczanie BMI"
+        />
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Podaj wzrost" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="cm"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Podaj wagę" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="kg"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <!--adding a radio button -->
+        <RadioButton
+            android:id="@+id/javaRB"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="4dp"
+            android:text="Kobieta"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <!--adding a radio button -->
+        <RadioButton
+            android:id="@+id/cRB"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:padding="4dp"
+            android:text="Mężczyzna"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <!--adding a radio button -->
+
+
+    </RadioGroup>
+
+
+</LinearLayout>
